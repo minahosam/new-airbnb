@@ -1,0 +1,5 @@
+<h1>welcome</h1>
+{{post}}
+{% for posts in post %}
+    <h3><a href="{% url 'airbnb_post:airbnb_detail' posts.id %}">{{posts}}</a></h3>
+{% endfor %}
