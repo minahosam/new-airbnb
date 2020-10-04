@@ -1,4 +1,6 @@
 <h1>welcome</h1>
+<a href="{% url 'airbnb_post:new_post' %}">add new post</a>
+<hr>
 {{post}}
 {% for posts in post %}
     <h3><a href="{% url 'airbnb_post:airbnb_detail' posts.id %}">{{posts}}</a></h3>
