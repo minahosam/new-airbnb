@@ -27,4 +27,6 @@ class airbnb(models.Model):
         verbose_name_plural = 'rooms'
     def get_absolute_url(self):
         return reverse("airbnb_post:edit_post", kwargs={"post_id": self.id})
+    def delete_post(self):
+        return reverse("airbnb_post:delete_post", kwargs={"post_id": self.id})
     

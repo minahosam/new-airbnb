@@ -1,6 +1,8 @@
 <h1>hi</h1>
 {{single}}
 <hr>
-<a href="{{single.get_absolute_url}}">edit post</a>
+{# <a href="{% url 'airbnb_post:edit_post' single.id %}">delete_post</a> #}
+<a href="{{single.get_absolute_url}}">edit post</a> 
 <hr>
-<a href="{% url 'airbnb_post:delete_post' single.id %}">delete_post</a>
+{# <a href="{% url 'airbnb_post:delete_post' single.id %}">delete_post</a> #}
+<a href="{{single.delete_post}}">delete room</a>
